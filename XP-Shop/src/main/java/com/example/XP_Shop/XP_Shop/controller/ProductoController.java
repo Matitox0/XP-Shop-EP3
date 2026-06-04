@@ -19,11 +19,13 @@ import com.example.XP_Shop.XP_Shop.dto.ProductoDTO;
 import com.example.XP_Shop.XP_Shop.model.Producto;
 import com.example.XP_Shop.XP_Shop.service.ProductoService;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 
 
 @RestController
 @RequestMapping("/api/v1/producto")
+@Tag(name = "Producto")
 public class ProductoController {
 
     @Autowired
